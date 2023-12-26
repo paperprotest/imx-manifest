@@ -5,6 +5,41 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.11P2 GA for L6.1.55-2.2.0
+======================
+Key Features
+    - VULKAN API 1.3 (iMX8ULP)
+    - Weston 11.0.3 (iMX8 and iMX9)
+    - Weston 10.0.5 (iMX6 and iMX7)
+
+Improvements and Bug fixes
+
+IMX-3177	[L6.4] Update virt_to_pfn usage 
+IMX-3179	G2d output abnormal in Vulkan 1.3 with 6411p2 driver 
+IMX-3178	[QNX] Segmentation fault when collecting profiling information
+IMX-3195	4Kp60 video playback is tearing and not smooth when not full-screen  
+IMX-3184	[8MP/8MN] warning log is printed when playback some streams
+IMX-2696	Add array index check for gckDEVICE_Profiler_Dispatch
+IMX-3229	enable shader frequency scaling feature to avoid GPU/NPU device overheat
+IMX-3198	[8ULP] Met vulkan cts hang in vulkan 1.3 api update 
+IMX-3135	[android13_imx8xp] CtsMediaV2TestCases case fail with android13 + 6.4.11.p1 driver 
+IMX-3163	The workaround fix for opencv_perf_gapi random gpu hang on 8MP.
+IMX-3199	fixed 8mp Android 3D drawing issue
+IMX-3214	fix android13 8mn 8mq 8mp enable vk1.3 cts meet dump
+IMX-3222	Fix build warning when destory wl_compositor proxy
+IMX-3218	[L6.4] viv_drm_driver: Clear fd/handle callbacks in struct drm_driver
+Bug 34139	some haluts case fail on imx6/imx7 nxp board with 64x branch
+Bug 35945	[gfxbench5.0]vulkan_5_normal meet  memory leak on imx815 wld with 6411 NXP branch   
+Bug 35762	[gfxbench5.0]vulkan_5_high/vulkan_5_normal meet memoryLeak on imx815 wld with 64x branch  
+MGS-7402	Fix wayland EGL surface destroy error by eglTerminate call
+MGS-7320	Fix gcoOS_MemCopy crash issue in VSI GPU library
+MGS-7385	Build break with toolchain nanbield
+MGS-7350	Ignore GPU build version check
+MGS-7276	Add Thread Sanitizer debug option
+MGS-7272	Fix Ubuntu GUI flicker issue
+LF-9829		GPUXWLD some vulkan samples aborted or failed with segmentation fault
+LF-10261	Remove gcoHARDWARE_Commit&gcoHARDWARE_Stall in gcoCL_CreateHWWithType
+
 6.4.11P2 GA for L6.1.36-2.1.0
 ======================
 Key Features

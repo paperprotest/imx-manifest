@@ -4,7 +4,7 @@
 <include name="aosp-trusty-android-14.0.0_1.2.0.xml"/>
 
 <remote name="imx-android"
-fetch=" https://github.com/nxp-imx-android"
+fetch="https://github.com/nxp-imx-android"
 review="" />
 
 <!-- BEGIN trusty core projects -->

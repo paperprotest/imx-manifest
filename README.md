@@ -7,8 +7,8 @@ Specific instructions will reside in READMEs in each branch.
 
 The branch will be based on the release type Linux or Android with release manifests in each branch tied to the base releases.
 
-For example for i.MX Linux Yocto Project releases the branches will be imx-linux-<Yocto Project release> so `imx-linux-kirkstone` with
-all manifests tied to releases on `Kirkstone` in this branch.
+For example for i.MX Linux Yocto Project releases the branches will be imx-linux-<Yocto Project release> so `imx-linux-mickledore` with
+all manifests tied to releases on `Mickledore` in this branch.
 
 Install the `repo` utility:
 ---------------------------
@@ -37,6 +37,10 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
+To download the 6.1.55-2.2.1 patch release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-mickledore -m imx-6.1.55-2.2.1.xml
+```
 To download the 6.1.55-2.2.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-mickledore -m imx-6.1.55-2.2.0.xml
